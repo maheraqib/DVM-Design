@@ -1746,20 +1746,31 @@ position: absolute;
     }
 }
 
-@media screen and (max-width: 480px) { /* Small phones */
+@media screen and (max-width: 480px) { /* For small screens */
     .event-section {
-        width: 100%;
-        padding: 10px;
-    }
-    
-    .event-left img {
-        max-width: 100%;
-        height: 200px;
+        flex-direction: column; /* Stack image and text */
+        align-items: center;
+        text-align: center;
     }
 
-    .event-right h2 {
-        font-size: 20px;
+    .event-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
+
+    .event-left img {
+        width: 90%; /* Makes the image larger */
+        max-width: 300px; /* Limits max size */
+        height: auto; /* Keeps aspect ratio */
+        border-radius: 12px;
+        object-fit: cover; /* Ensures proper fit */
+    }
+
+    .event-right {
+        width: 90%; /* Ensures text section is balanced */
+    }
+
 
     .subheading {
         font-size: 14px;
