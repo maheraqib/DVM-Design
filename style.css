@@ -1497,7 +1497,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fce8ff;
+    background-color: rgb(250, 240, 255);
     padding: 30px;
     width: 80%;
     border-radius: 20px;
@@ -1812,3 +1812,172 @@ position: absolute;
     }
 }
 
+
+.vet-product-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 80px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgb(250, 240, 255);
+}
+
+.pawss i{
+    font-size: 25px;
+    color: rgb(193, 150, 213);
+    transform : rotate(-45deg);
+   
+}
+
+/* Left Side Content */
+.vet-info-box {
+    max-width: 50%;
+}
+
+.vet-info-box h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+.vet-info-box h2 i {
+    color: rgb(193, 150, 213);
+    font-size: 25px;
+    transform : rotate(-45deg);
+}
+
+.vet-paw-icon {
+    color: #a54dc9;
+}
+
+.vet-subtitle {
+    color: #a54dc9;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.vet-description {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Button */
+.vet-btn {
+    background: #a54dc9;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.vet-btn i {
+    font-size: 14px;
+}
+
+.vet-btn:hover {
+    background: #8c3bbf;
+}
+
+/* Products Grid */
+.vet-product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 50%;
+}
+
+/* Product Card */
+.vet-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.vet-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Product Image */
+.vet-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background: #f3e8ff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Product Details */
+.vet-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.vet-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #a54dc9;
+}
+
+.vet-category {
+    font-size: 14px;
+    color: #777;
+}
+
+.vet-rating {
+    font-size: 14px;
+    color: #ff9f43;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .vet-product-wrapper {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .vet-info-box {
+        max-width: 100%;
+    }
+
+    .vet-product-grid {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .vet-product-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .vet-product-wrapper {
+        padding: 20px;
+    }
+
+    .vet-info-box h2 {
+        font-size: 24px;
+    }
+
+    .vet-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
