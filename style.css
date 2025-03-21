@@ -1938,9 +1938,28 @@ position: absolute;
 }
 
 .vet-rating {
-    font-size: 14px;
+    font-size: 11px;
     color: #ff9f43;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-btns{
+    background: rgb(140, 104, 205);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30%;
+    cursor: pointer;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* position: absolute;
+    bottom: 15px;
+    right: 15px; */
 }
 
 /* Responsive Design */
@@ -1979,5 +1998,341 @@ position: absolute;
     .vet-btn {
         font-size: 14px;
         padding: 8px 16px;
+    }
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+}
+.highlight {
+    color: rgb(171, 69, 219);
+    font-weight: 600;
+}
+.paw {
+    font-size: 1.2rem;
+}
+.view-all {
+    background: rgb(171, 69, 219);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    list-style: none;
+    background: white;
+}
+nav ul li {
+    margin: 10px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #c32de2;
+}
+.active {
+    color: purple;
+    font-weight: bold;
+}
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.product-item {
+    width: 100%;
+    max-width: 320px;
+    background: white;
+    border-radius: 15px;
+    padding: 0 0 15px 0;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.product-box {
+    position: relative;
+}
+.product-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background: none;
+    border-radius: 15px;
+    border-bottom: 2px solid rgb(140, 104, 205);
+}
+.favorite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: grey;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.title-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    color: rgb(24, 24, 24);
+}
+.cost {
+    color: rgb(24, 24, 24);
+    font-weight: bold;
+}
+.product-category {
+    color: grey;
+    font-size: 0.9rem;
+    padding: 0px 10px;
+}
+.review-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+
+}
+.star-rating {
+    color: rgb(241, 179, 23);
+}
+.add-cart {
+    background: rgb(140, 104, 205);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+@media (max-width: 1024px) {
+    .product-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* second banner section start here */
+
+.banner-section {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main Banner */
+.main-banner {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    background: #fce7f3;
+    border-radius: 20px;
+    padding: 30px;
+    width: 700px;
+    height: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner-content {
+    max-width: 50%;
+}
+
+.banner-content h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.highlight-text {
+    color: rgb(181, 91, 223);
+}
+
+.highlight-text i{
+    font-size: 25px;
+    color: rgb(193, 150, 213);
+    transform : rotate(-40deg);
+}
+
+.banner-content p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.banner-image {
+    max-width: 250px;
+    height:400;
+    border-radius: 10px;
+    bottom: 0;
+}
+
+.paw-icon {
+    font-size: 20px;
+}
+
+.decor {
+    position: absolute;
+    font-size: 20px;
+    color: #d582c5;
+}
+
+.paw-left {
+    font-size: 25px;
+    bottom: -10px;
+    left: 10px;
+    transform : rotate(-40deg);
+    color: rgb(193, 150, 213);
+
+}
+
+.paw-right {
+    font-size: 25px;
+    top: 100px;
+    right: 90px;
+    transform : rotate(-40deg);
+    color: rgb(193, 150, 213);
+}
+
+/* Side Banners */
+.side-banners {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.clinic-banner,
+.expo-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 250px;
+    height: 120px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.clinic-banner {
+    background: #a49b7d;
+}
+
+.expo-banner {
+    background: #eab0e8;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.btn-book {
+    width: 40%;
+    /* margin-top: 10px; */
+    padding: 5px 5px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 150px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main-banner {
+        width: 500px;
+        height: 250px;
+    }
+
+    .banner-content h2 {
+        font-size: 20px;
+    }
+
+    .banner-content p {
+        font-size: 12px;
+    }
+
+    .banner-image {
+        max-width: 180px;
+    }
+
+    .clinic-banner,
+    .expo-banner {
+        width: 220px;
+        height: 110px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-banner {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .banner-content {
+        max-width: 100%;
+    }
+
+    .banner-image {
+        max-width: 80%;
+        margin-top: 15px;
+    }
+
+    .side-banners {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .clinic-banner,
+    .expo-banner {
+        width: 45%;
+        height: auto;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .side-banners {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clinic-banner,
+    .expo-banner {
+        width: 80%;
     }
 }
